@@ -15,7 +15,7 @@ const createDir = (nameDirs = []) => {
     return nameDirs;
 }
 
-const sortPeoples = (someFn) => {
+const sortPeople = (someFn) => {
     for (const listOfPerson of listOfPeople) {
         if (listOfPerson.age > 20 && listOfPerson.gender === 'Male') {
             fs.writeFile(
@@ -64,4 +64,4 @@ const sortPeoples = (someFn) => {
     }
 }
 
-module.exports = {createDir, sortPeoples}
+module.exports = {createDir, sortPeople}
