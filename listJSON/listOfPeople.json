@@ -2,7 +2,7 @@
   {
     "name": "Дмитрий",
     "gender": "Male",
-    "age": 74
+    "age": 15
   },
   {
     "name": "Кристина",
@@ -27,12 +27,12 @@
   {
     "name": "Марина",
     "gender": "Female",
-    "age": 32
+    "age": 11
   },
   {
     "name": "Ева",
     "gender": "Female",
-    "age": 69
+    "age": 13
   },
   {
     "name": "Никита",
@@ -42,7 +42,7 @@
   {
     "name": "Богдан",
     "gender": "Male",
-    "age": 23
+    "age": 16
   },
   {
     "name": "Максим",
