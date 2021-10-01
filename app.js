@@ -1,4 +1,4 @@
-const sortPeople = require('./sortPeople.js')
+const sortPeople = require('./sortPeople.js');
 
 const nameOfDirs = sortPeople.createDir(
     [
@@ -6,6 +6,6 @@ const nameOfDirs = sortPeople.createDir(
         'manYounger20',
         'womanOlder20',
         'womanYounger20',
-    ])
-sortPeople.sortPeople(nameOfDirs)
+    ]);
+sortPeople.sortPeople(nameOfDirs);
 

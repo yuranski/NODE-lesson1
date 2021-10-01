@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const listOfPeopleDir = path.join(__dirname, '/listJSON/listOfPeople.json');
-const listOfPeople = require(listOfPeopleDir)
+const listOfPeople = require(listOfPeopleDir);
 
 const createDir = (nameDirs = []) => {
     for (const nameOfDir of nameDirs) {
@@ -9,14 +9,14 @@ const createDir = (nameDirs = []) => {
             if (e) {
                 return;
             }
-            console.log(e)
-        })
+        });
     }
     return nameDirs;
-}
+};
 
 const sortPeople = (someFn) => {
     for (const listOfPerson of listOfPeople) {
+
         if (listOfPerson.age > 20 && listOfPerson.gender === 'Male') {
             fs.writeFile(
                 `${__dirname}/${someFn[0]}/${listOfPerson.name}.txt`,
@@ -25,9 +25,11 @@ const sortPeople = (someFn) => {
                     if (err) {
                         return;
                     }
-                    console.log(err)
-                })
+                    console.log(err);
+                });
+            continue;
         }
+
         if (listOfPerson.age < 20 && listOfPerson.gender === 'Male') {
             fs.writeFile(
                 `${__dirname}/${someFn[1]}/${listOfPerson.name}.txt`,
@@ -36,9 +38,11 @@ const sortPeople = (someFn) => {
                     if (err) {
                         return;
                     }
-                    console.log(err)
-                })
+                    console.log(err);
+                });
+            continue;
         }
+
         if (listOfPerson.age > 20 && listOfPerson.gender === 'Female') {
             fs.writeFile(
                 `${__dirname}/${someFn[2]}/${listOfPerson.name}.txt`,
@@ -47,9 +51,11 @@ const sortPeople = (someFn) => {
                     if (err) {
                         return;
                     }
-                    console.log(err)
-                })
+                    console.log(err);
+                });
+            continue;
         }
+
         if (listOfPerson.age < 20 && listOfPerson.gender === 'Female') {
             fs.writeFile(
                 `${__dirname}/${someFn[3]}/${listOfPerson.name}.txt`,
@@ -58,10 +64,11 @@ const sortPeople = (someFn) => {
                     if (err) {
                         return;
                     }
-                    console.log(err)
-                })
+                    console.log(err);
+                });
         }
-    }
-}
 
-module.exports = {createDir, sortPeople}
+    }
+};
+
+module.exports = {createDir, sortPeople};
